@@ -22,6 +22,6 @@ class MobileBankApiTestV1 {
               .statusCode(200)
               // static import для JsonSchemaValidator.matchesJsonSchemaInClasspath
               .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
-              .body("[0].currency", equalTo("RUR"));
+              .body("[1].currency", equalTo("USD"));
     }
 }
